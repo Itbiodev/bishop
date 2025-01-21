@@ -33,22 +33,6 @@ int main(int argc, char *argv[])
 	{ 1, 1 }
     };
 
-    //    for (int pos = 0; pos < 64; pos++) {
-    // int i = (int) (pos / 8);
-    // int j = pos % 8;
-    //
-    // for (int k = 0; k < 4; k++) {
-    //     int ni = i + bishop_moves[k][0], nj = j + bishop_moves[k][1];
-    //     while (ni >= 0 && ni < 8 && nj >= 0 && nj < 8) {
-    //      int new_pos = ni * 8 + nj;
-    //      transition_matrix[new_pos][pos] = 1;
-    //      ni += bishop_moves[k][0];
-    //      nj += bishop_moves[k][1];
-    //     }
-    // }
-    // current_state[pos] = initial_state[pos];
-    //    }
-
     for (int pos = 0; pos < 64; pos++) {
 	int i = pos / 8, j = pos % 8;
 
